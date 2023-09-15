@@ -1,7 +1,8 @@
-{
+{  
   "name": "data-base",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.4.0",
+  "description": "",  
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/LuisE1998/node-data-base#readme",
   "dependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "pg": "^8.11.3"
   }
 }

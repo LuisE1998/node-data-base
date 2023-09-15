@@ -1,9 +1,22 @@
-console.log("Estoy ejecutando");
+import pkg from 'pg';
+const { Client } = pkg;
 
-function sum(a, b) {
-    return a + b;
-  }
+const client = new Client({
+    user: 'postgres',
+    host: 'localhost',
+    database: 'colegio',
+    password: '12345',
+    port: 5432
+})
 
-  module.exports = {
-    sum
-  };
+const getSchools = async () =>{
+    
+    await client.connect();
+    const res = await client.query('Select * from school', []);
+    await client.end();
+    return res; 
+}
+
+getSchools().then((result)=>{
+    console.log("result: ", result.rows.map((value)=>value.school_name));
+})
