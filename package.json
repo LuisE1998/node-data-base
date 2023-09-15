@@ -1,4 +1,5 @@
-{
+{  
+  "type": "module",
   "name": "data-base",
   "version": "1.0.0",
   "description": "",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/LuisE1998/node-data-base#readme",
   "dependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "pg": "^8.11.3"
   }
 }
