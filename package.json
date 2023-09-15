@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/LuisE1998/node-data-base/issues"
   },
-  "homepage": "https://github.com/LuisE1998/node-data-base#readme"
+  "homepage": "https://github.com/LuisE1998/node-data-base#readme",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
 }
